@@ -1,49 +1,75 @@
-<!DOCTYPE html>
+
+<!DOCTYPE HTML>
 <html>
+<head>
+    <title>GuoJing/duidui Project</title>
+  <meta charset="utf-8" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="/feed.xml">
+<link rel="icon" href="/images/icons/avatar.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/style/css/bootstrap.css" type="text/css" media="screen">
+<script type="text/javascript" src="/style/jquery-1.7.1.min.js"></script>
+<link rel="stylesheet" href="/style/style.css" type="text/css">
+<meta content="A simple generator of my github project pages." name="description"/>
+<meta content="GuoJing/duidui" name="keywords"/>
+<script>
+ $(document).ready(function(){
+    $('.nav a').hover(
+        function(){
+            $(this).animate({opacity: 0.3}, 400)
+        },
+        function(){
+            $(this).animate({opacity: 1}, 400)
+        });
+ });
+ function getURLParameter(name) {
+    return decodeURI(
+        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+    );
+ }
+</script>
+<style>
+    .content img {
+        width: auto;
+    }
+</style>
+</head>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Duidui : A simple generator of my github project pages." />
+<body>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+<div class="container">
+<div class="banner">
+ <ul class="nav nav-pills">
+  <li><a href="/">Blog</a></li>
+  <li><a href="https://github.com/GuoJing/duidui">Github</a></li>
+ </ul>
+</div>
 
-    <title>Duidui</title>
-  </head>
+<div class="main clearfix">
 
-  <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/GuoJing/duidui">View on GitHub</a>
+<div class="posts">
+    <div class="title">GuoJing/duidui</div>
+<div class="content">
+    <p>Simple Github Page generator tool.</p>
 
-          <h1 id="project_title">Duidui</h1>
-          <h2 id="project_tagline">A simple generator of my github project pages.</h2>
+</div>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/GuoJing/duidui/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/GuoJing/duidui/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+<div class="footer">
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p>Simple Github Page generator tool.</p>
-      </section>
-    </div>
+© Copryright by<a href="http://guojing.me/" target="_blank">GuoJing</a> 2012-2014 using <a href="http://www.github.com/" target="_blank">GitHub</a> and <a href="http://guojing.me/duidui" target="_blank">duidui</a>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Duidui maintained by <a href="https://github.com/GuoJing">GuoJing</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+  ga('create', 'UA-42721249-1', 'guojing.me');
+  ga('send', 'pageview');
 
-    
+</script>
+</div>
 
-  </body>
+</div>
+</body>
 </html>
